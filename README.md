@@ -1,3 +1,45 @@
+# Markdown-renderer
+An application that renders markdown reports from S3 client-side.
+
+Features:
+1. Markdown renderer
+2. Report browser
+3. Auth to ensure you can only view reports that belong to a group of users.
+4. Routing to create links to directly access reports
+
+## Overall product proposal
+Product: An automated, scheduled, hosted static data Jupyter Notebook based reporting app.
+User: Data analysts and scientists with limited Cloud infrastructure knowledge.
+
+1. Marketing landing website.
+1. Provide (Python) API to build report in notebook and upload to static storage finished report.
+2. Provide a Jupyter notebook via CLI with requirements.txt.
+3. Schedule notebook execution via CLI.
+4. Provide access controlled reports via browser.
+
+Have an open public example of auto-generated reports.
+
+Asset structure:
+1. Public/private
+2. Account
+3. Topic
+4. Title
+
+Can restrict users within one account to certain topics.
+
+Design components to be open-source and provide paid hosted solution.
+
+Deliverables:
+1. Create static reporting example using public dataset.
+   1. What dataset would make interesting reports which is updated real-time?
+
+Routing tutorial: https://www.youtube.com/watch?v=Law7wfdg_ls
+
+## Proposed architecture
+Proposed architecture using AWS:
+
+![architecture](diagrams/architecture.drawio.svg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
